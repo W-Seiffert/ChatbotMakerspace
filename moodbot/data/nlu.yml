@@ -17,12 +17,14 @@ nlu:
     - goodevening
     - good afternoon
     - nice to see you
+    - nice to meet you
     - howdy
     - yo 
 
 - intent: goodbye
   examples: |
     - cu
+    - see you
     - good by
     - cee you later
     - good night
@@ -118,6 +120,8 @@ nlu:
 - intent: bot_challenge
   examples: |
     - are you a bot?
+    - are you an AI?
+    - are you an artificial intelligence?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
@@ -126,17 +130,20 @@ nlu:
 - intent: tell_name
   examples: |
     - I am [Marco](name)
+    - I'm [Irene](name)
+    - It's [Aline](name)
+    - My name is [George](name)
+    - My name is [Kate](name)
     - Call me [Patrick](name)
     - Call me [Sabrina](name)
     - My friends call me [Mike](name)
-    - It's [Aline](name)
-    - I'm [Irene](name)
-    - My name is [George](name)
-    - My name is [Kate](name)
     - I am called [Sayuri](name)
+    - I am called [Jim](name)
     - People call me [Michael](name)
     - They call me [Karen](name)
+    - They call me [Thomas](name)
     - This is [Nelson](name)
+    - This is [Mary](name)
     - [Thomas](name)
     - [Maria](name)
     - [Andy](name)
