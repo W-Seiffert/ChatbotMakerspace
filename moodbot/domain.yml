@@ -25,6 +25,7 @@ slots:
 responses:
   utter_greet:
   - text: "Hey {name}! How are you?"
+  - text: "Hello {name}! How are you doing?"
 
   utter_cheer_up:
   - text: "I'm a chatbot that cheers people up {name}. Here is something to cheer you up. Keep your head up!"
@@ -36,7 +37,7 @@ responses:
 
   utter_did_that_help:
   - text: "Did that help you a little bit?"
-  - text: "Might this cheer you up {name}?"
+  - text: "Might this cheer you up, {name}?"
 
   utter_goodbye:
   - text: "Goodbye {name}. I'm here for you! See you soon!"
@@ -44,6 +45,7 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+  - text: "I am a chatbot. Think of me as a virtual agent."
 
   utter_happy:
   - text: "Great {name}! Share your happiness with the world!"
