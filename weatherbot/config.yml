@@ -32,24 +32,24 @@ pipeline:
 #   - name: FallbackClassifier
 #     threshold: 0.3
 #     ambiguity_threshold: 0.1
-- name: SpacyNLP
-  model: "en_core_web_md"
-- name: SpacyTokenizer
-- name: SpacyEntityExtractor
-  dimensions: ["GPE"]
-- name: SpacyFeaturizer
-  pooling: mean
-- name: LexicalSyntacticFeaturizer
-- name: CountVectorsFeaturizer
-  analyzer: char_wb
-  min_ngram: 1
-  max_ngram: 4
-- name: DIETClassifier
-  epochs: 100
-- name: EntitySynonymMapper
-- name: FallbackClassifier
-  threshold: 0.3
-  ambiguity_threshold: 0.1
+  - name: SpacyNLP
+    model: "en_core_web_md"
+  - name: SpacyTokenizer
+  - name: SpacyEntityExtractor
+    dimensions: ["GPE"]
+  - name: SpacyFeaturizer
+    pooling: mean
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+  - name: EntitySynonymMapper
+  - name: FallbackClassifier
+    threshold: 0.3
+    ambiguity_threshold: 0.1
 
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
@@ -66,11 +66,11 @@ policies:
 #     max_history: 5
 #     epochs: 100
 #     constrain_similarities: true
-- name: MemoizationPolicy
-- name: UnexpecTEDIntentPolicy
-  max_history: 8
-  epochs: 100
-- name: TEDPolicy
-  max_history: 8
-  epochs: 100
-- name: RulePolicy
+  - name: MemoizationPolicy
+  - name: UnexpecTEDIntentPolicy
+    max_history: 8
+    epochs: 100
+  - name: TEDPolicy
+    max_history: 8
+    epochs: 100
+  - name: RulePolicy
