@@ -11,23 +11,29 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hallo. Wie geht es Dir?"
+  - text: "Hey, wie geht's?"
+  - text: "Ich grüße Dich. Alles klar?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "Hier ist etwas, um Dich aufzumuntern:"
+    image: "https://imgur.com/gallery/dog-likes-to-race-train-when-goes-by-y0M7PqX"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Hat Dir das geholfen?"
+  - text: "Hat Dich das etwas erheitert?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Großartig, weiter so!"
+  - text: "Freut mich zu hören!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Auf Wiedersehen."
+  - text: "Tschüss und bis bald."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Ich bin ein Bot, betrieben mit Hilfe von Software des Unternehmens Rasa."
+  - text: "Ich bin ein Chatbot aus dem Hause Rasa, betrachte mich als einen einfachen KI-Agenten."
 
 session_config:
   session_expiration_time: 60
