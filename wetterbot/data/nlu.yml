@@ -39,6 +39,43 @@ nlu:
     - Bye bye
     - Ich verabschiede mich
 
+- intent: inform_weather
+  examples: |
+    - Wie ist das Wetter heute?
+    - Wie ist das Wetter?
+    - Wetter
+    - Gib mir eine Wetterauskunft.
+    - Ich hätte gerne eine Wetterauskunft.
+    - Ich hätte gerne eine Auskunft zum Wetter.
+    - Sag mir, wie das Wetter heute ist.
+    - Sag mir, wie das Wetter in [New York](GPE) heute ist.
+    - Wie ist das Wetter in [Berlin](GPE)?
+    - Wie ist das Wetter in [Paris](GPE) aktuell?
+    - Wie mag das Wetter in [Neapel](GPE) sein?
+    - Was für ein Wetter haben wir in [London](GPE)?
+    - Was für ein Wetter ist in [Los Angeles](GPE)?
+    - Aktuelles Wetter in [Chicago](GPE)
+    - Wetter in [Toronto](GPE)
+    - Wetterverhältnisse in [Barcelona](GPE)
+
+- intent: tell_location
+  examples: |
+      - für [Berlin](GPE)
+      - für [New York](GPE)
+      - [London](GPE)
+      - [San Jose]
+      - [Puerto Rico]
+      - [Amsterdam](GPE)
+      - für [Munich](GPE)
+      - in [Munich](GPE)
+      - in [New York](GPE)
+      - für [Senegal](GPE)
+      - in [Namibia](GPE)
+      - [France](GPE)
+      - Oh, sorry, in [Italy](GPE)
+      - Ich meine in [Kempten](GPE)
+      - Ich meine in [South Africa](GPE)
+
 - intent: affirm
   examples: |
     - Ja
@@ -70,37 +107,37 @@ nlu:
     - Nicht wirklich
     - Nicht
 
-- intent: mood_great
-  examples: |
-    - Gut
-    - Nicht schlecht
-    - Sehr gut
-    - Richtig gut
-    - Perfekt
-    - Großartig
-    - Wunderbar
-    - Super
-    - Bestens
-    - Ausgezeichnet
-    - Es geht mir gut
-    - Es geht mir sehr gut
-    - Ich bin gut drauf
-    - Ich fühle mich gut
+#- intent: mood_great
+#  examples: |
+#    - Gut
+#    - Nicht schlecht
+#    - Sehr gut
+#    - Richtig gut
+#    - Perfekt
+#    - Großartig
+#    - Wunderbar
+#    - Super
+#    - Bestens
+#    - Ausgezeichnet
+#    - Es geht mir gut
+#    - Es geht mir sehr gut
+#    - Ich bin gut drauf
+#    - Ich fühle mich gut
 
-- intent: mood_unhappy
-  examples: |
-    - Ich bin traurig
-    - Ich bin sehr traurig
-    - Ich bin niedergeschlagen
-    - Ich fühle mich nicht gut
-    - Ich fühle mich schlecht
-    - Es geht mir schlecht
-    - Es geht mir nicht gut
-    - Schlecht
-    - Nicht gut
-    - Ich bin völlig fertig
-    - Ich bin fix und fertig
-    - Ich bin nicht gut drauf
+#- intent: mood_unhappy
+#  examples: |
+#    - Ich bin traurig
+#    - Ich bin sehr traurig
+#    - Ich bin niedergeschlagen
+#    - Ich fühle mich nicht gut
+#    - Ich fühle mich schlecht
+#    - Es geht mir schlecht
+#    - Es geht mir nicht gut
+#    - Schlecht
+#    - Nicht gut
+#    - Ich bin völlig fertig
+#    - Ich bin fix und fertig
+#    - Ich bin nicht gut drauf
 
 - intent: bot_challenge
   examples: |

@@ -3,33 +3,60 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
+#  - affirm
+#  - deny
+#  - mood_great
+#  - mood_unhappy
   - bot_challenge
+  - inform_weather
+  - tell_location
+
+entities:
+  - GPE
+
+slots:
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: GPE
+
+actions:
+  - action_weather
 
 responses:
   utter_greet:
-  - text: "Hallo. Wie geht es Dir?"
-  - text: "Hey, wie geht's?"
-  - text: "Ich grüße Dich. Alles klar?"
+  - text: "Guten Tag. Wie kann ich Dir helfen?"
+  - text: "Es grüßt Dich der Wetterbot. Womit kann ich dienen?"
 
-  utter_cheer_up:
-  - text: "Hier ist etwas, um Dich aufzumuntern:"
-    image: "https://imgur.com/gallery/dog-likes-to-race-train-when-goes-by-y0M7PqX"
+#  utter_cheer_up:
+#  - text: "Hier ist etwas, um Dich aufzumuntern:"
+#    image: "https://imgur.com/gallery/dog-likes-to-race-train-when-goes-by-y0M7PqX"
 
-  utter_did_that_help:
-  - text: "Hat Dir das geholfen?"
-  - text: "Hat Dich das etwas erheitert?"
+#  utter_did_that_help:
+#  - text: "Hat Dir das geholfen?"
+#  - text: "Hat Dich das etwas erheitert?"
 
-  utter_happy:
-  - text: "Großartig, weiter so!"
-  - text: "Freut mich zu hören!"
+#  utter_happy:
+#  - text: "Großartig, weiter so!"
+#  - text: "Freut mich zu hören!"
+
+  utter_ask_location:
+    - text: "An welchem Ort?"
+    - text: "Für welchen Ort willst Du das wissen?"
+    - text: "Wo denn?"
+
+  utter_location:
+    - text: "{location} ist ein schöner Ort!"
+    - text: "Ich schätze {location} außerordentlich!"
+    - text: "Ach, {location}! Ich bin immer gerne dort gewesen!"
+    - text: "Ich wünschte, ich käme selbst mal wieder nach {location}."
 
   utter_goodbye:
   - text: "Auf Wiedersehen."
   - text: "Tschüss und bis bald."
+  - text: "Mach's gut und bis zum nächsten Mal."
 
   utter_iamabot:
   - text: "Ich bin ein Bot, betrieben mit Hilfe von Software des Unternehmens Rasa."
