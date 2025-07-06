@@ -64,9 +64,14 @@ responses:
   - text: "Ich bin ein Bot, betrieben mit Hilfe von Software des Unternehmens Rasa."
   - text: "Ich bin ein Chatbot aus dem Hause Rasa, betrachte mich als einen einfachen KI-Agenten."
 
+  utter_ask_rephrase:
+  - text: "Entschuldige, das habe ich nicht verstanden. Könntest Du das nochmal anders formulieren?"
+  - text: "Das ist mir nicht klar. Könntest Du Dein Anliegen noch anders ausdrücken?"
+  - text: "Könntest Du Dein Anliegen eventuell umformulieren? Vielleicht habe ich dann eine Antwort."
+
   utter_default:
-  - text: "Entschuldige, das habe ich nicht verstanden. Könntest Du das nochmal anders formulieren? Beachte, dass ich nur allgemeine Fragen zu den Wetterverhältnissen in größeren Orten und den Ländern der Welt beantworten kann."
-  - text: "Verzeih mir, aber ich verstehe diese Äußerung nicht - oder sie geht über meinen Horizont hinaus. Versuch es eventuell mit einer anderen Formulierung. Vergiss nicht, dass ich nur ein einfacher Wetterbot bin, der nicht mehr als allgemeine Auskünfte über das Wetter in der Welt erteilen kann."
+  - text: "Ich fürchte, ich kann Dir da nicht weiterhelfen. Beachte, dass ich nur allgemeine Fragen zu den Wetterverhältnissen in größeren Orten und den Ländern der Welt beantworten kann."
+  - text: "Verzeih mir, aber ich verstehe diese Äußerung nicht - oder sie geht über meinen Horizont hinaus. Vergiss nicht, dass ich nur ein einfacher Wetterbot bin, der nicht mehr als allgemeine Auskünfte über das Wetter in der Welt erteilen kann."
 
 session_config:
   session_expiration_time: 60
