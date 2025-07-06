@@ -47,7 +47,7 @@ responses:
   utter_ask_location:
     - text: "An welchem Ort?"
     - text: "Für welchen Ort willst Du das wissen?"
-    - text: "Wo denn?"
+    - text: "Wo bitte?"
 
   utter_location:
     - text: "{location} ist ein schöner Ort!"
@@ -67,7 +67,7 @@ responses:
   utter_ask_rephrase:
   - text: "Entschuldige, das habe ich nicht verstanden. Könntest Du das nochmal anders formulieren?"
   - text: "Das ist mir nicht klar. Könntest Du Dein Anliegen noch anders ausdrücken?"
-  - text: "Könntest Du Dein Anliegen eventuell umformulieren? Vielleicht habe ich dann eine Antwort."
+  - text: "Könntest Du Dein Anliegen eventuell umformulieren?"
 
   utter_default:
   - text: "Ich fürchte, ich kann Dir da nicht weiterhelfen. Beachte, dass ich nur allgemeine Fragen zu den Wetterverhältnissen in größeren Orten und den Ländern der Welt beantworten kann."
