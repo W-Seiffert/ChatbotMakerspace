@@ -9,6 +9,7 @@ intents:
   - inform_weather
   - tell_location
   - inform_generally
+  - out_of_scope
   - nlu_fallback
 
 entities:
@@ -55,7 +56,7 @@ responses:
   utter_ask_rephrase:
   - text: "Entschuldige, das habe ich nicht verstanden. Könntest Du das nochmal anders formulieren?"
   - text: "Das ist mir nicht klar. Könntest Du Dein Anliegen noch anders ausdrücken?"
-  - text: "Könntest Du Dein Anliegen eventuell umformulieren?"
+  - text: "Hmm ... Könntest Du Dein Anliegen vielleicht umformulieren?"
 
   utter_default:
   - text: "Ich fürchte, ich kann Dir da nicht weiterhelfen. Beachte, dass ich nur allgemeine Fragen zu den Wetterverhältnissen in größeren Orten und den Ländern der Welt beantworten kann."
