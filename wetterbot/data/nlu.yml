@@ -93,6 +93,22 @@ nlu:
     - Hast Du weitere informationen?
     - Hast Du noch mehr Informationen?
 
+- intent: out_of_scope
+  examples: |
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 99
+    - 2+2
+    - was macht 2 plus 2?
+    - was macht 2+2?
+    - ich hätte gern eine Pizza
+    - wie komme ich an eine Million Euro?
+    - bist Du soweit?
+    - blabla
+
 - intent: affirm
   examples: |
     - Ja
