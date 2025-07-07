@@ -5,12 +5,11 @@ intents:
   - goodbye
 #  - affirm
 #  - deny
-#  - mood_great
-#  - mood_unhappy
   - bot_challenge
   - inform_weather
   - tell_location
   - inform_generally
+  - nlu_fallback
 
 entities:
   - GPE
@@ -26,23 +25,12 @@ slots:
 actions:
   - action_weather
   - action_generalinfo
+  - action_two_stage_fallback
 
 responses:
   utter_greet:
   - text: "Guten Tag. Wie kann ich Dir helfen?"
   - text: "Es grüßt Dich der Wetterbot. Womit kann ich dienen?"
-
-#  utter_cheer_up:
-#  - text: "Hier ist etwas, um Dich aufzumuntern:"
-#    image: "https://imgur.com/gallery/dog-likes-to-race-train-when-goes-by-y0M7PqX"
-
-#  utter_did_that_help:
-#  - text: "Hat Dir das geholfen?"
-#  - text: "Hat Dich das etwas erheitert?"
-
-#  utter_happy:
-#  - text: "Großartig, weiter so!"
-#  - text: "Freut mich zu hören!"
 
   utter_ask_location:
     - text: "An welchem Ort?"
