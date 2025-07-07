@@ -3,8 +3,8 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-#  - affirm
-#  - deny
+  - affirm
+  - deny
   - bot_challenge
   - inform_weather
   - tell_location

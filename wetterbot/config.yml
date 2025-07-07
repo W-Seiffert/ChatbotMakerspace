@@ -73,7 +73,7 @@ policies:
   - name: TEDPolicy
     max_history: 8
     epochs: 100
-  - name: RulePolicy
+  - name: TwoStageFallbackPolicy
     nlu_threshold: 0.3
     core_threshold: 0.3
     fallback_nlu_action_name: "action_default_fallback"
