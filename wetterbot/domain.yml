@@ -45,6 +45,7 @@ responses:
     - text: "Ich schätze {location} außerordentlich!"
     - text: "Ach, {location}! Ich bin immer gerne dort gewesen!"
     - text: "Ich wünschte, ich käme selbst mal wieder nach {location}."
+    - text: "{location} ist ganz sicher eine Reise Wert!"
 
   utter_goodbye:
   - text: "Auf Wiedersehen."
@@ -57,6 +58,11 @@ responses:
 
   utter_out_of_scope:
   - text: "Entschuldige, ich kann diese Anfrage nicht beantworten."
+  - text: "Entschuldige, da bin ich bereits überfragt."
+  - text: "Entschuldige, das ist nicht mein Ressort ;-)"
+  - text: "Das kann der Wetterbot Dir leider nicht beantworten, sorry."
+  - text: "Darauf habe ich leider keine Antwort."
+  - text: "Tut mir leid, da muss ich passen - meine Expertise liegt beim Wetter."
   - text: "Sorry, das liegt außerhalb meiner Kompetenz - ich bin ein schlichter Wetterbot."
   - text: "Ich fürchte, ich kann Dir da nicht weiterhelfen. Beachte, dass ich nur allgemeine Fragen zu den Wetterverhältnissen in größeren Orten und den Ländern der Welt beantworten kann."
 
