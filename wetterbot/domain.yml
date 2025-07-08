@@ -55,6 +55,11 @@ responses:
   - text: "Ich bin ein Bot, betrieben mit Hilfe von Software des Unternehmens Rasa."
   - text: "Ich bin ein Chatbot aus dem Hause Rasa, betrachte mich als einen einfachen KI-Agenten."
 
+  utter_out_of_scope:
+  - text: "Entschuldige, ich kann diese Anfrage nicht beantworten."
+  - text: "Sorry, das liegt außerhalb meiner Kompetenz - ich bin ein schlichter Wetterbot."
+  - text: "Ich fürchte, ich kann Dir da nicht weiterhelfen. Beachte, dass ich nur allgemeine Fragen zu den Wetterverhältnissen in größeren Orten und den Ländern der Welt beantworten kann."
+
   utter_ask_rephrase:
   - text: "Entschuldige, das habe ich nicht verstanden. Könntest Du das nochmal anders formulieren?"
   - text: "Das ist mir nicht klar. Könntest Du Dein Anliegen noch anders ausdrücken?"
